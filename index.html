@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <title>Dashboard #01</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+    <div class="container">
+        <!-- Sidebar section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <!-- <img src="images/logo.png"> -->
+                    <i class='bx bxs-color'></i>
+                    <h2>Neon<span class="danger">Friss</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="side-bar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        storage
+                    </span>
+                    <h3>Database</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings_input_antenna
+                    </span>
+                    <h3>Connecions</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        auto_graph
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mark_email_unread
+                    </span>
+                    <h3>Notification</h3>
+                    <span class="message-count">18</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        account_balance_wallet
+                    </span>
+                    <h3>Payments</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        security
+                    </span>
+                    <h3>Security</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <!-- End of sidebar section -->
+
+        <!-- Main Content -->
+        <main>
+
+            <!-- User profile and welcome -->
+            <div class="right-top">
+                <div class="nav">
+                    <div class="left-user-info">
+                        <img src="./img/profile pics.jpeg">
+
+                        <div class="user-name">
+                            <span class="material-icons-sharp">
+                                chevron_right
+                            </span>
+                            <p>Adriana O'Sullivan</p>
+                        </div>
+                        <div class="user-name">
+                            <span class="material-icons-sharp">
+                                chevron_right
+                            </span>
+                            <p class="active">Dashboard</p>
+                        </div>
+                    </div>
+
+
+                    <div class="right-user-info">
+                        <button id="menu-btn">
+                            <span class="material-icons-sharp">
+                                menu
+                            </span>
+                        </button>
+
+                        <div class="user-name">
+                            <p>Hey, <b>Adriana</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+
+                        <img src="./img/profile pics.jpeg">
+                    </div>
+                </div>
+
+                <div class="welcome-text">
+                    <h1>Welcome back, Adriana</h1>
+                    <p>Here's an overview of your blog traffic and recently active users</p>
+                </div>
+            </div>
+            <!-- End of user profile and welcome -->
+
+
+            <!-- Current MRR container -->
+            <div class="current-container">
+                <h1>Current MRR</h1>
+
+                <div class="days-and-icon">
+                    <div class="days-container">
+                        <a  class="active" href="#">12 months</a>
+                        <a href="#">30days</a>
+                        <a href="#">7days</a>
+                        <a href="#">24hours</a>
+                    </div>
+
+                    <div class="filter-container">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                filter_list
+                            </span>
+                            <p>Filters</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of current MRR container -->
+
+
+            <!-- Graph container -->
+            <div class="bottom-container">
+                <div class="graph-container">
+                    <canvas class="activity-chart"></canvas>
+                </div>
+                <div class="second-graph-container">
+                    <canvas class="second-activity-chart"></canvas>
+                </div>
+            </div>
+             <!-- End of graph container -->
+
+             <!-- Bottom-container -->
+
+            <div class="recent-post-container">
+                <div class="recent-top-header">
+                    <h2>Recent posts</h2>
+
+                    <div class="filter-container">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                add
+                            </span>
+                            <p>New posts</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="information-container-listed">
+                    <div class="information-container">
+                        <img src="./img/information.jpeg">
+
+
+                        <div class="header-icon-paragraph">
+                            <div class="header-and-icon">
+                                <h5>What is wireframing</h5>
+                                <span class="material-icons-sharp">
+                                    arrow_outward
+                                </span>
+                            </div>
+                            <p>Introduction to Wireframing and its Principles. Learn from the best in the indust...</p>
+                        </div>
+
+                        <div class="profile-and-date">
+                            <img src="./img/profile1.jpeg">
+
+                            <div class="name-and-date">
+                                <h6>Cameron Yan</h6>
+                                <p>15 Jan 2024</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="information-container">
+                        <img src="./img/information.jpeg">
+
+
+                        <div class="header-icon-paragraph">
+                            <div class="header-and-icon">
+                                <h5>What is wireframing</h5>
+                                <span class="material-icons-sharp">
+                                    arrow_outward
+                                </span>
+                            </div>
+                            <p>Introduction to Wireframing and its Principles. Learn from the best in the indust...</p>
+                        </div>
+
+                        <div class="profile-and-date">
+                            <img src="./img/profile1.jpeg">
+
+                            <div class="name-and-date">
+                                <h6>Cameron Yan</h6>
+                                <p>15 Jan 2024</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="information-container">
+                        <img src="./img/information.jpeg">
+
+
+                        <div class="header-icon-paragraph">
+                            <div class="header-and-icon">
+                                <h5>What is wireframing</h5>
+                                <span class="material-icons-sharp">
+                                    arrow_outward
+                                </span>
+                            </div>
+                            <p>Introduction to Wireframing and its Principles. Learn from the best in the indust...</p>
+                        </div>
+
+                        <div class="profile-and-date">
+                            <img src="./img/profile1.jpeg">
+
+                            <div class="name-and-date">
+                                <h6>Cameron Yan</h6>
+                                <p>15 Jan 2024</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+             
+            <!-- End of bottom-container -->
+        </main>
+
+
+    </div>
+    
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./dash.js"></script>
+</body>
+</html>
